@@ -24,7 +24,7 @@ const initialValues = {
 }
 
 export default function LoginPage() {
-  const handleSubmit = (values: typeof initialValues, { setSubmitting }: any) => {
+  const handleSubmit = (values: typeof initialValues, { setSubmitting }: { setSubmitting: (isSubmitting: boolean) => void }) => {
     // Console log the form data
     console.log('Form submitted with values:', values)
     
@@ -134,7 +134,7 @@ export default function LoginPage() {
 
                   <div className="text-center">
                     <p className="text-sm text-gray-600">
-                      Don't have an account?{' '}
+                      Don`t have an account?{' '}
                       <a href="#" className="font-medium text-blue-600 hover:text-blue-500">
                         Sign up
                       </a>
