@@ -44,14 +44,22 @@ export default function Header({ currentPage }: HeaderProps) {
               მთავარი
             </Link>
             <Link 
-              href="#" 
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              href="/activities" 
+              className={`transition-colors ${
+                isActive('/activities') 
+                  ? 'text-blue-600 font-semibold' 
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
             >
               აქტივობები
             </Link>
             <Link 
-              href="#" 
-              className="text-gray-600 hover:text-gray-900 transition-colors"
+              href="/pricing" 
+              className={`transition-colors ${
+                isActive('/pricing') 
+                  ? 'text-blue-600 font-semibold' 
+                  : 'text-gray-600 hover:text-gray-900'
+              }`}
             >
               ფასები
             </Link>

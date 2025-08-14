@@ -21,7 +21,8 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">მთავარი</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">ჩვენს შესახებ</Link></li>
-              <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">სერვისები</Link></li>
+                              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors">აქტივობები</Link></li>
+                <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">ფასები</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">კონტაქტი</Link></li>
             </ul>
           </div>
