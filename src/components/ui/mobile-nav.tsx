@@ -2,7 +2,8 @@
 
 import { useState } from 'react'
 import { Button } from './button'
-import { Menu, X } from 'lucide-react'
+import { Menu, Smartphone, X } from 'lucide-react'
+import Link from 'next/link'
 
 interface MobileNavProps {
   className?: string
@@ -31,13 +32,14 @@ export function MobileNav({ className }: MobileNavProps) {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed inset-y-0 right-0 z-50 w-64 bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : 'translate-x-full'
+        className={`fixed inset-y-0 right-0 z-50 w-64  overflow-hidden   bg-white shadow-xl transform transition-transform duration-300 ease-in-out ${
+          isOpen ? 'translate-x-0 bg-white min-h-[500px]' : 'translate-x-full w-0 max-w-0'
         }`}
       >
         <div className="flex flex-col h-full p-6">
           {/* Close Button */}
           <div className="flex justify-end mb-8">
+
             <Button
               variant="ghost"
               size="icon"
@@ -49,50 +51,50 @@ export function MobileNav({ className }: MobileNavProps) {
 
           {/* Navigation Links */}
           <nav className="flex-1 space-y-6">
-            <a
+            <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
-              Home
-            </a>
-            <a
+              მთავარი
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
-              Activities
-            </a>
-            <a
+              აქტივობები
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
-              Pricing
-            </a>
-            <a
+              ფასები
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
-              About
-            </a>
-            <a
+              ჩვენ შესახებ
+            </Link>
+            <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
-              Contact
-            </a>
+              კონტაქტი
+            </Link>
           </nav>
 
           {/* Auth Buttons */}
           <div className="space-y-4 pt-6 border-t border-gray-200">
-            <Button variant="ghost" className="w-full justify-start text-lg" onClick={toggleMenu}>
-              Login
-            </Button>
-            <Button className="w-full justify-start text-lg" onClick={toggleMenu}>
-              Sign Up
+          <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 w-full" onClick={() => {
+              window.open('https://play.google.com/store/apps/details?id=com.flexfit.app', '_blank')
+            }}>
+              <Smartphone className="h-4 w-4 mr-2" />
+              აპის ჩამოტვირთვა
             </Button>
           </div>
         </div>
