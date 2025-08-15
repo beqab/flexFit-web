@@ -26,13 +26,20 @@ export default function PricingPage() {
             <span className="font-bold text-yellow-300">აირჩიეთ თქვენთვის შესაფერისი გეგმა</span> და დაიწყეთ ჯანსაღი ცხოვრების მოგზაურობა
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
-              გამოცადეთ უფასოდ
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          
+            <Link 
+              href="https://tally.so/r/n9kQdK"
+              target="_blank"
+              className="bg-gradient-to-r whitespace-nowrap flex items-center justify-center rounded-full from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 hover:scale-105 transition-all duration-300 px-8 py-3 text-lg"
+            >
+              მიიღე ერთვიანი უფასო საწევრო 
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
-              <Link href="/contact">დაგვიკავშირდით</Link>
-            </Button>
+            </Link>
+            {/* <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
+              გაიგეთ მეტი
+            </Button>  */}
+          </div>
           </div>
         </div>
       </section>
@@ -370,7 +377,7 @@ export default function PricingPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+      {/* <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
             მზად ხართ დასაწყებად?
@@ -386,6 +393,39 @@ export default function PricingPage() {
             <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
               <Link href="/contact">დაგვიკავშირდით</Link>
             </Button>
+          </div>
+        </div>
+      </section> */}
+
+       {/* CTA Section */}
+       <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
+           როდის შევძლებ FlexFit-ის გამოყენებას?
+            <br />
+          </h2>
+          <p className="text-xl text-white mb-2 max-w-2xl mx-auto">
+           ჩვენი ინოვაციური პლატფორმა გზაშია სულ მალე შეძლებთ მის გამოყენბას მანამდე კი გაქვთ შესაძლებლობა
+           შემოუერთდეთ აქციას და
+           <span className="text-yellow-300  text-2xl">  სრულიად უფასოდ მიიღოთ ერთთვიანი ვიზიტები პარტნიორ დაწესებულებებში</span>
+         
+          </p>
+
+          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
+           <span>
+           {" "}  უფასო საწევროს მიიღებს <span className="text-yellow-300  text-2xl"> პირველი 500 მომხმარებელი </span> ასე რომ იჩქარეთ!
+           </span>
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              href="https://tally.so/r/n9kQdK"
+                  target="_blank"
+              className="bg-gradient-to-r whitespace-nowrap flex items-center justify-center rounded-full from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 hover:scale-105 transition-all duration-300 px-8 py-3 text-lg"
+            >
+              შეუერთდით აქციას
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Link>
+          
           </div>
         </div>
       </section>

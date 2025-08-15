@@ -1,7 +1,6 @@
 "use client"
-import { Button } from '@/components/ui/button'
 import { MobileNav } from '@/components/ui/mobile-nav'
-import { Smartphone } from 'lucide-react'
+import AppDownloadButton from '@/components/ui/app-download-button'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
@@ -87,12 +86,7 @@ export default function Header({ currentPage }: HeaderProps) {
 
           {/* Download App Button */}
           <div className="hidden md:flex items-center space-x-4">
-            <Button size="sm" className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700" onClick={() => {
-              window.open('https://play.google.com/store/apps/details?id=com.flexfit.app', '_blank')
-            }}>
-              <Smartphone className="h-4 w-4 mr-2" />
-              აპის ჩამოტვირთვა
-            </Button>
+            <AppDownloadButton />
           </div>
 
           {/* Mobile Navigation */}

@@ -1,14 +1,17 @@
-
+import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import {
-    ArrowRight,
-    CreditCard,
-    Infinity,
-    Percent,
-    QrCode,
-    Settings,
-    Smartphone,
-    Trophy
+import { 
+  Activity, 
+  CreditCard, 
+  Users, 
+  MapPin, 
+  Star, 
+  ArrowRight,
+  Infinity,
+  FileX2,
+  Smartphone,
+  QrCode,
+  Trophy
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -26,10 +29,6 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 opacity-80"></div>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 text-center">
-        {/* <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
-         მალე
-           
-          </h1> */}
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
             ერთი აპლიკაცია.
             <br />
@@ -37,27 +36,18 @@ export default function HomePage() {
               უსაზღვრო აქტივობები.
             </span>
           </h1>
-          <p className="text-xl sm:text-2xl text-[#fff] mb-8 max-w-3xl mx-auto">
-            <span className="font-bold text-yellow-300">მიიღეთ წვდომა ყველა სახის ფიტნეს და გამაჯანსაღებელ აქტივობაზე</span> და ისარგებლეთ <span className="font-semibold text-yellow-200"> ფასდაკლებით</span>. 
-            {/* გამოიყენეთ თქვენი კრედიტები ნებისმიერ ადგილზე, ნებისმიერ დროს. */}
-            <span className="block mt-2 font-bold text-2xl text-orange-300">134+ ლოკაცია • 48+ აქტივობა </span>
-          </p>
-          <p className="text-xl sm:text-2xl text-[#fff] mb-8 max-w-3xl mx-auto">
-            პირველ 500 მომხმარებელი მიიღებს ერთვიან უფასო ვიზიტებს პარტნიორ დაწესებულებებში
+          <p className="text-xl sm:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto">
+            <span className="font-bold text-yellow-300">მიიღეთ წვდომა ყველა სახის ფიტნეს და გამაჯანსაღებელ აქტივობაზე</span> და ისარგებლეთ <span className="font-semibold text-yellow-200">30%-მდე ფასდაკლებით</span>. გამოიყენეთ თქვენი კრედიტები ნებისმიერ ადგილზე, ნებისმიერ დროს.
+            <span className="block mt-2 font-bold text-2xl text-orange-300">130+ ლოკაცია • 78+ აქტივობა და მეტი</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          
-            <Link 
-              href="https://tally.so/r/n9kQdK"
-              target="_blank"
-              className="bg-gradient-to-r whitespace-nowrap flex items-center justify-center rounded-full from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 hover:scale-105 transition-all duration-300 px-8 py-3 text-lg"
-            >
-              მიიღე ერთვიანი უფასო საწევრო 
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
+              დაიწყეთ
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-            {/* <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
+            </Button>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
               გაიგეთ მეტი
-            </Button>  */}
+            </Button>
           </div>
         </div>
       </section>
@@ -93,13 +83,13 @@ export default function HomePage() {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto w-16 h-16 bg-gradient-to-br from-green-500 to-teal-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Percent className="h-8 w-8 text-white" />
+                  <Activity className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl text-blue-600">ფართო არჩევანი და ფასდაკლება</CardTitle>
               </CardHeader>
               <CardContent className="text-center">
                 <CardDescription className="text-gray-600">
-                  ისარგებლეთ 130-ზე მეტი პარტნიორი ობიექტით და 48-ზე მეტი აქტივობით. და მიიღეთ 30%-მდე ფასდაკლება.
+                  ისარგებლეთ 130-ზე მეტი პარტნიორი ობიექტისგან. სხვადასხვა აქტივობები განსხვავებული ღირებულებით, ისარგებლეთ 30%-მდე ფასდაკლებით.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -107,7 +97,7 @@ export default function HomePage() {
             <Card className="group hover:shadow-xl transition-all duration-300 border-0 shadow-lg">
               <CardHeader className="text-center pb-4">
                 <div className="mx-auto w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                  <Settings className="h-8 w-8 text-white" />
+                  <FileX2 className="h-8 w-8 text-white" />
                 </div>
                 <CardTitle className="text-xl text-blue-600">თქვენს საჭიროებაზე მორგებული</CardTitle>
               </CardHeader>
@@ -198,7 +188,7 @@ export default function HomePage() {
       </section>
 
       {/* Pricing Section */}
-      {/* <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -210,7 +200,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-        
+            {/* Basic Plan */}
             <Card className="relative border-2 hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-2xl text-blue-600">დამწყები</CardTitle>
@@ -232,11 +222,11 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-              
+                {/* <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
 
-          
+            {/* Standard Plan */}
             <Card className="relative border-2 border-blue-500 shadow-xl scale-105">
               <div className="absolute -top-4 left-1/2 transform -translate-x-1/2">
                 <span className="bg-blue-500 whitespace-nowrap text-white px-4 py-1 rounded-full text-sm font-medium">
@@ -263,11 +253,11 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-               
+                {/* <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
 
-            
+            {/* Premium Plan */}
             <Card className="relative border-2 hover:shadow-xl transition-all duration-300">
               <CardHeader className="text-center pb-4">
                 <CardTitle className="text-2xl text-blue-600">პრემიუმ</CardTitle>
@@ -289,15 +279,15 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-               
+                {/* <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* Testimonials Section */}
-      {/* <section className="py-20 bg-white">
+      <section className="py-20 bg-white">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -379,37 +369,25 @@ export default function HomePage() {
             </Card>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl font-bold text-white mb-4">
-           როდის შევძლებ FlexFit-ის გამოყენებას?
-            <br />
+            მზად ხართ FlexFit-ის მოგზაურობის დასაწყებად?
           </h2>
-          <p className="text-xl text-white mb-2 max-w-2xl mx-auto">
-           ჩვენი ინოვაციური პლატფორმა გზაშია სულ მალე შეძლებთ მის გამოყენბას მანამდე კი გაქვთ შესაძლებლობა
-           შემოუერთდეთ აქციას და
-           <span className="text-yellow-300  text-2xl">  სრულიად უფასოდ მიიღოთ ერთთვიანი ვიზიტები პარტნიორ დაწესებულებებში</span>
-         
-          </p>
-
-          <p className="text-xl text-white mb-8 max-w-2xl mx-auto">
-           <span>
-           {" "}  უფასო საწევროს მიიღებს <span className="text-yellow-300  text-2xl"> პირველი 500 მომხმარებელი </span> ასე რომ იჩქარეთ!
-           </span>
+          <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">
+            შემოუერთდით ათასობით კმაყოფილ წევრს და დაიწყეთ თქვენი ჯანსაღი ცხოვრების მოგზაურობა დღესვე.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              href="https://tally.so/r/n9kQdK"
-                  target="_blank"
-              className="bg-gradient-to-r whitespace-nowrap flex items-center justify-center rounded-full from-green-500 to-emerald-600 text-white hover:from-green-600 hover:to-emerald-700 hover:scale-105 transition-all duration-300 px-8 py-3 text-lg"
-            >
-              შეუერთდით აქციას
+            <Button size="lg" className="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 text-lg">
+              გამოცადეთ უფასოდ
               <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          
+            </Button>
+            <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-blue-600 px-8 py-3 text-lg">
+              <Link href="/contact">დაგვიკავშირდით</Link>
+            </Button>
           </div>
         </div>
       </section>
