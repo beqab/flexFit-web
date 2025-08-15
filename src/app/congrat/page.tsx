@@ -60,7 +60,7 @@ export default function CongratulationsPage() {
             <Card>
               <CardHeader>
                 <CardTitle className="flex items-center gap-2 text-blue-600">
-                  <Users className="h-5 w-5" />
+                  <Users className="min-h-5 min-w-5" />
                   პირველი 500 მომხმარებელი
                 </CardTitle>
               </CardHeader>
@@ -83,7 +83,7 @@ export default function CongratulationsPage() {
                 </div> */}
                 
                 <div className="flex items-center gap-2 text-sm text-gray-500">
-                  <Calendar className="h-4 w-4" />
+                  <Calendar className="min-h-4 min-w-4" />
                   <span>აქცია მოქმედებს აპლიკაციის გაშვებამდე</span>
                 </div>
               </CardContent>
@@ -101,7 +101,7 @@ export default function CongratulationsPage() {
               </CardHeader>
               <CardContent className="space-y-4">
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                  <div className="min-w-6 min-h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
                     1
                   </div>
                   <div>
@@ -111,7 +111,7 @@ export default function CongratulationsPage() {
                 </div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                  <div className="min-w-6 min-h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
                     2
                   </div>
                   <div>
@@ -121,7 +121,7 @@ export default function CongratulationsPage() {
                 </div>
                 
                 <div className="flex items-start gap-3">
-                  <div className="w-6 h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
+                  <div className="min-w-6 min-h-6 bg-blue-600 text-white rounded-full flex items-center justify-center text-sm font-bold mt-0.5">
                     3
                   </div>
                   <div>
