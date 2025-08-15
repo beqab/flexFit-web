@@ -1,21 +1,17 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
+import {
+  Building,
   Facebook,
-  Twitter,
   Instagram,
   Linkedin,
-  Mail,
-  Phone,
-  MapPin,
-  MessageCircle,
-  Send,
-  User,
   Mail as MailIcon,
-  Calendar,
-  Building
+  MessageCircle,
+  Phone,
+  Send,
+  Twitter,
+  User
 } from 'lucide-react'
-import Link from 'next/link'
 
 export default function ContactPage() {
   return (
@@ -145,7 +141,7 @@ export default function ContactPage() {
               </h2>
               <p className="text-lg text-gray-600 max-w-2xl mx-auto">
                 შეავსეთ ფორმა ქვემოთ და ჩვენ მალე დაგიკავშირდებით. 
-                ჩვენი გუნდი მზადაა დაგეხმაროთ ნებისმიერი კითხვით.
+                ჩვენი გუნდი მზადაა დაგეხმაროთ ნებისმიერ საკითხზე.
               </p>
             </div>
 
@@ -197,7 +193,7 @@ export default function ContactPage() {
                       <input
                         type="tel"
                         className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
-                        placeholder="+995 555 123 456"
+                        placeholder="+995 579 29 66 56"
                       />
                     </div>
                     <div>

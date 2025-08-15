@@ -1,18 +1,14 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Check,
-  Star,
-  ArrowRight,
-  Users,
-  MapPin,
+import {
   Activity,
+  ArrowRight,
+  Check,
   CreditCard,
-  Infinity,
-  Zap,
-  Shield,
-  Clock,
-  Gift
+  MapPin,
+  Star,
+  Users,
+  Zap
 } from 'lucide-react'
 import Link from 'next/link'
 
@@ -49,7 +45,7 @@ export default function PricingPage() {
               აირჩიეთ თქვენი გეგმა
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              ყველა გეგმა მოიცავს უფასო მოქნილობას, ფასდაკლებებს და პრემიუმ მხარდაჭერას
+              ყველა გეგმა მოიცავს მაქსიმალურ მოქნილობას, ფასდაკლებებებს და პრემიუმ მხარდაჭერას
             </p>
           </div>
 
@@ -342,7 +338,7 @@ export default function PricingPage() {
               <CardContent>
                 <p className="text-gray-600">
                   კი, შეგიძლიათ შეცვალოთ თქვენი გეგმა ნებისმიერ დროს. ცვლილება ძალაში შევა 
-                  მომდევნო ბილინგის ციკლიდან.
+                  მომდევნო გადახის თარიღიდან.
                 </p>
               </CardContent>
             </Card>
@@ -353,8 +349,7 @@ export default function PricingPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600">
-                  არა, კრედიტები არ გადაიტანა მომდევნო თვეს. ყოველთვიურად იღებთ ახალ კრედიტებს, 
-                  რომლებიც უნდა გამოიყენოთ იმ თვის განმავლობაში.
+                  დიახ, კრედიტები შეგინარჩუნდებათ მომდევნო თვეს. დარჩენილი კრედიტები შეგინარჩუნდებათ მომდევნო თვეს ასერომ გამოუყნებელი კრედიტები არ დაგეკარგებათ თუ შემდეგ თვეშიც დაიმატებთ ნებისმიერი რაოდენობის კრედიტებს .
                 </p>
               </CardContent>
             </Card>

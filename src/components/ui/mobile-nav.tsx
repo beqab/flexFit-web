@@ -58,13 +58,13 @@ export function MobileNav({ className }: MobileNavProps) {
             >
               მთავარი
             </Link>
-            <Link
+            {/* <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"
               onClick={toggleMenu}
             >
               აქტივობები
-            </Link>
+            </Link> */}
             <Link
               href="#"
               className="block text-lg font-medium text-gray-900 hover:text-blue-600 transition-colors"

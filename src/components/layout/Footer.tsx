@@ -21,13 +21,13 @@ export default function Footer() {
             <ul className="space-y-2">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">მთავარი</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">ჩვენს შესახებ</Link></li>
-                              <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors">აქტივობები</Link></li>
+                              {/* <li><Link href="/activities" className="text-gray-400 hover:text-white transition-colors">აქტივობები</Link></li> */}
                 <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">ფასები</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">კონტაქტი</Link></li>
             </ul>
           </div>
           
-          <div>
+          {/* <div>
             <h4 className="text-lg font-semibold mb-4">სერვისები</h4>
             <ul className="space-y-2">
               <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">ფიტნეს ცენტრები</Link></li>
@@ -35,13 +35,13 @@ export default function Footer() {
               <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">იოგა სტუდიები</Link></li>
               <li><Link href="#" className="text-gray-400 hover:text-white transition-colors">ჯგუფური გაკვეთილები</Link></li>
             </ul>
-          </div>
+          </div> */}
           
           <div>
             <h4 className="text-lg font-semibold mb-4">კონტაქტი</h4>
             <div className="space-y-2 text-gray-400">
               <p>თბილისი, საქართველო</p>
-              <p>+995 555 123 456</p>
+              <p>+995 579 29 66 56</p> 
               <p>info@flexfit.ge</p>
             </div>
           </div>

@@ -16,7 +16,7 @@ import {
   TrendingUp,
   Globe
 } from 'lucide-react'
-import Link from 'next/link'
+
 
 export default function AboutPage() {
   return (
@@ -43,9 +43,10 @@ export default function AboutPage() {
               ჩვენი ისტორია
             </h2>
             <p className="text-lg text-gray-600 leading-relaxed">
-              2023 წელს დაიბადა FlexFit - ფიტნესის სამყაროში რევოლუციის იდეა. ჩვენი მიზანი იყო შეგვექმნა პლატფორმა, 
-              რომელიც გაამარტივებდა ფიტნესის ცენტრებში წვდომას და საშუალებას მისცემდა ადამიანებს 
-              ექციათ ჯანსაღი ცხოვრების წესი უფრო მარტივად და ეფექტურად.
+              2024 წელს დაიბადა FlexFit - ფიტნესის სამყაროში რევოლუციის იდეა. ჩვენი მიზანი იყო შეგვექმნა პლატფორმა, 
+              რომელიც ერთ სივრცეში მოაქცევდა ყველა ფიტნეს და გამაჯანსაღებელ  დაწესებულებას 
+               აპლიკაციით რომელიც ყველა დაწესებულებაზე გაძლევს წვდომას შეზღუდვების ფარეშე.
+              ჯანსაღი ცხოვრების წესი გაგვეხადა ისეთი ხელმისაწვსომი და მიმზიდველი როგორც არასდროს
             </p>
           </div>
 
@@ -55,14 +56,14 @@ export default function AboutPage() {
                 როგორ დაიწყო ყველაფერი
               </h3>
               <p className="text-gray-600 leading-relaxed mb-6">
-                ჩვენი გუნდი შედგებოდა ფიტნესის ენთუზიასტებისგან, რომლებიც თავად აწყდნენ ფიტნესის ცენტრების 
+                ჩვენი გუნდი შედგებოდა ფიტნესის ენთუზიასტებისგან, რომლებიც თავად წააწყდნენ ფიტნესის ცენტრების 
                 ფასებისა და წვდომის პრობლემებს. ჩვენ გვინდოდა შეგვექმნა გადაწყვეტა, რომელიც 
                 გაამარტივებდა ფიტნესის ცენტრებში წვდომას და საშუალებას მისცემდა ადამიანებს 
-                ექციათ ჯანსაღი ცხოვრების წესი უფრო მარტივად.
+                ექციათ ჯანსაღი ცხოვრების წესი უფრო მარტივი.
               </p>
               <p className="text-gray-600 leading-relaxed">
-                დღეს FlexFit არის საქართველოს წამყვანი ფიტნესის პლატფორმა, რომელიც აერთიანებს 
-                130+ ლოკაციას და 78+ აქტივობას ერთი აბონემენტით.
+                დღეს FlexFit ის გუნდიდმა შეიმუშავა, რომელიც აერთიანებს 
+                130+ ლოკაციას და 48+ აქტივობას ერთი აპლიკაციაში.
               </p>
             </div>
             <div className="relative">
@@ -73,17 +74,17 @@ export default function AboutPage() {
                     <div className="text-sm text-gray-600">ლოკაცია</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-3xl font-bold text-purple-600 mb-2">78+</div>
+                    <div className="text-3xl font-bold text-purple-600 mb-2">48+</div>
                     <div className="text-sm text-gray-600">აქტივობა</div>
                   </div>
-                  <div className="text-center">
+                  {/* <div className="text-center">
                     <div className="text-3xl font-bold text-indigo-600 mb-2">50K+</div>
                     <div className="text-sm text-gray-600">მომხმარებელი</div>
                   </div>
                   <div className="text-center">
                     <div className="text-3xl font-bold text-green-600 mb-2">95%</div>
                     <div className="text-sm text-gray-600">კმაყოფილება</div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
@@ -190,7 +191,7 @@ export default function AboutPage() {
       </section>
 
       {/* Team Section */}
-      <section className="py-20 bg-gray-50">
+      {/* <section className="py-20 bg-gray-50">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
@@ -242,7 +243,7 @@ export default function AboutPage() {
             </Card>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section className="py-20 bg-white">
@@ -252,7 +253,7 @@ export default function AboutPage() {
               დაგვიკავშირდით
             </h2>
             <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-              გაქვთ კითხვები? ჩვენ ვზღუდავთ თქვენს შეტყობინებას
+              გაქვთ კითხვები? ჩვენ მზად ვართ დაგემხმაროთ
             </p>
           </div>
 
@@ -266,7 +267,7 @@ export default function AboutPage() {
                 </div>
                 <div className="flex items-center space-x-3">
                   <Phone className="w-5 h-5 text-blue-600" />
-                  <span className="text-gray-600">+995 555 123 456</span>
+                  <span className="text-gray-600">+995 579 29 66 56</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-5 h-5 text-blue-600" />

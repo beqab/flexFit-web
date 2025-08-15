@@ -43,7 +43,7 @@ export default function Header({ currentPage }: HeaderProps) {
             >
               მთავარი
             </Link>
-            <Link 
+            {/* <Link 
               href="/activities" 
               className={`transition-colors ${
                 isActive('/activities') 
@@ -52,7 +52,7 @@ export default function Header({ currentPage }: HeaderProps) {
               }`}
             >
               აქტივობები
-            </Link>
+            </Link> */}
             <Link 
               href="/pricing" 
               className={`transition-colors ${

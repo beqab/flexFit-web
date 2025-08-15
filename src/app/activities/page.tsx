@@ -1,22 +1,12 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card'
-import { 
-  Activity,
-  MapPin,
-  Star,
-  Clock,
-  Users,
+import {
   ArrowRight,
-  Search,
-  Filter,
-  Heart,
   Dumbbell,
-  Waves,
+  Filter,
+  Search,
   Sparkles,
-  Footprints,
-  Bike,
-  Zap,
-  Music
+  Waves
 } from 'lucide-react'
 import Link from 'next/link'
 
