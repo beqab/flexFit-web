@@ -48,7 +48,7 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-          <p>&copy; 2024 FlexFit. ყველა უფლება დაცულია.</p>
+          <p>&copy; 2025 FlexFit. ყველა უფლება დაცულია.</p>
         </div>
       </div>
     </footer>

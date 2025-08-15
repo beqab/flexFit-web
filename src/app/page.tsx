@@ -20,7 +20,13 @@ export default function HomePage() {
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-blue-50">
 
       {/* Hero Section */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 py-20 sm:py-32">
+      <section className="relative overflow-hidden py-20 sm:py-32" style={{
+        backgroundImage: "url('/images/mapImage.png')",
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
+        <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-purple-600 to-indigo-700 opacity-80"></div>
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="container relative mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight">
@@ -216,7 +222,7 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-                <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button>
+                {/* <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
 
@@ -247,7 +253,7 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-                <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">აირჩიეთ პაკეტი</Button>
+                {/* <Button className="w-full mt-6 bg-blue-600 hover:bg-blue-700">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
 
@@ -273,7 +279,7 @@ export default function HomePage() {
                     30%-მდე ფასდაკლება
                   </div>
                 </div>
-                <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button>
+                {/* <Button className="w-full mt-6">აირჩიეთ პაკეტი</Button> */}
               </CardContent>
             </Card>
           </div>
@@ -356,7 +362,7 @@ export default function HomePage() {
                   <div className="w-10 h-10 bg-gradient-to-br from-orange-500 to-red-600 rounded-full mr-3"></div>
                   <div>
                     <div className="font-semibold text-gray-900">ნინო ქართველიშვილი</div>
-                    <div className="text-sm text-gray-500">წევრი 2024 წლიდან</div>
+                    <div className="text-sm text-gray-500">წევრი 2025 წლიდან</div>
                   </div>
                 </div>
               </CardContent>

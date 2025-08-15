@@ -25,10 +25,10 @@ export default function Header({ currentPage }: HeaderProps) {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <div className="flex items-center">
-            <Link href="/" className="flex items-center"> 
-              <div className="h-8 w-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mr-3"></div>
-              <span className="text-xl font-bold text-gray-900">FlexFit</span>
-            </Link>
+              <Link href="/" className="flex items-center"> 
+                <div className="h-8 w-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mr-3"></div>
+                <span className="text-xl font-bold text-gray-900">FlexFit</span>
+              </Link>
           </div>
 
           {/* Navigation Links */}
