@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -7,8 +8,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <div className="h-8 w-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mr-3"></div>
-              <span className="text-xl font-bold">FlexFit</span>
+             <Image src="/logo.svg" alt="FlexFit" width={200} height={100} className="w-20 h-20" />   
             </div>
             <p className="text-gray-400 mb-4">
               ერთი აბონემენტი, უსაზღვრო აქტივობები. FlexFit-თან ერთად ისარგებლეთ 

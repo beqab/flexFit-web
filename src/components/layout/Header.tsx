@@ -3,6 +3,7 @@ import { MobileNav } from '@/components/ui/mobile-nav'
 import AppDownloadButton from '@/components/ui/app-download-button'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
+import Image from 'next/image'
 
 interface HeaderProps {
   currentPage?: string
@@ -25,8 +26,7 @@ export default function Header({ currentPage }: HeaderProps) {
           {/* Logo */}
           <div className="flex items-center">
               <Link href="/" className="flex items-center"> 
-                <div className="h-8 w-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg mr-3"></div>
-                <span className="text-xl font-bold text-gray-900">FlexFit</span>
+               <Image src="/darkLogo.svg" alt="FlexFit" width={70} height={40} />   
               </Link>
           </div>
 
